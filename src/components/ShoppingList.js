@@ -28,12 +28,17 @@ function ShoppingList({ items, onItemFormSubmit }) {
         onSearchChange={onSearchChange}
       />
       <ul className="Items">
-        {search ? items.filter((item) => item.name.toLowerCase().includes(search.toLowerCase())).map((item) => (
+        {itemsToDisplay.filter((item) => {
+          if (search === "") {
+            return true;
+          } else if (item.name.toLowerCase().includes(search.toLowerCase())) {
+            return true;
+          } else {
+            return false;
+          }
+        }).map((item) => (
           <Item key={item.id} name={item.name} category={item.category} />
-        )) :
-          itemsToDisplay.map((item) => (
-            <Item key={item.id} name={item.name} category={item.category} />
-          ))}
+        ))}
       </ul>
     </div>
   );
