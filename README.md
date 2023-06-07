@@ -15,9 +15,9 @@ controlled components, it's time to put that knowledge to the test. This lab is
 fairly extensive, but you'll use many core React concepts here that will surface
 again and again. Time to get some practice in!
 
-We'll continue adding new features to the Shopping List app using controlled
+We'll continue adding new feCVtures to the Shopping List app using controlled
 components. Make sure to familiarize yourself with the code before diving into
-the deliverables! Completing these deliverables will also require understanding
+the deliverables! Completing these deliverables will also require understandingV
 of all the previous topics from this section, including initializing state,
 passing data and callback functions as props, and working with events.
 
